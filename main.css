@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+    background-color: #f7f7f7;
+}
+
+header {
+    height: 7vh;
+    width: 100%;
+}
+
+.logo {
+    position: fixed;
+    float: left;
+    margin: 0;
+    padding-top: 4px;
+    padding-left: 20px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.3);
+    background-color: #3f3844;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 1s;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #1C99B3;
+    transition: 0.5s;
+}
+
+.navHamburger {
+    width: 100%;
+    background: #3f3844;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+    font-size: 24px;
+}
+
+.navHamburger:hover {
+    color: #1C99B3;
+    transition: 0.5s
+}
+
+.fontButton {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    color: #ACACAC;
+    margin-top: 20px;
+}
+
+.fontButton a {
+    border: 2px solid #ACACAC;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.fontButton a:hover {
+    color: #3f3844;
+    border-color: #3f3844;
+    transition: 0.5s;
+}
+
+article {
+    max-width: 1200px;
+    min-height: 75vh;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.3);
+}
+
+.articleHeader {
+    padding: 25px;
+    color: #1C99B3;
+    font-size: 40px;
+}
+
+.articleParagraph {
+    font-size: 25px;
+    line-height: 40px;
+    color: #3f3844;
+}
+
+.buttonsError {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.companyLogo img {
+    max-width: 600px;
+    height: auto;
+}
+
+.companyLogo {
+    max-width: 600px;
+    height: 300px;
+}
+
+.companyName {
+    padding: 0px;
+    margin: 0;
+    width: 100%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    color: #1C99B3;
+    font-weight: bold;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    cursor: pointer;
+}
+
+.companyName:hover {
+    color: #3f3844;
+    transition: 0.5s;
+}
+
+.errorParagraph {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.errorParagraph img {
+    height: auto;
+    max-width: 720px;
+}
+
+.errorParagraph p {
+    margin-block-start: 50px;
+    margin-block-end: 50px;
+    line-height: 40px;
+    font-size: 25px;
+    color: #3f3844;
+}
+
+footer {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    margin-top: 100px;
+    padding: 30px;
+    background-color: #3f3844;
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    transition: 3s;
+}
+
+.navigationBar2 ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.navigationBar2 ul li {
+    list-style: none;
+    padding: 20px;
+}
+
+.navigationBar2 ul li a {
+    text-decoration: none;
+    color: #f7f7f7;
+    font-weight: bold;
+}
+
+.navigationBar2 ul li a:hover {
+    color: #1C99B3;
+    transition: 0.5s;
+}
+
+#buttonUp {
+    display: inline-block;
+    background-color: #1C99B3;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0.5;
+    visibility: hidden;
+    z-index: 1;
+}
+
+#buttonUp::after {
+    font-weight: bold;
+    line-height: 30px;
+    color: #fff;
+}
+
+#buttonUp:hover {
+    cursor: pointer;
+    background-color: #3f3844;
+    color: #fff;
+}
+
+#buttonUp.show {
+    opacity: 0.5;
+    visibility: visible;
+}
+
+@media(max-width: 1200px) {
+
+
+    .logo {
+        position: fixed;
+        top: 0;
+        padding-top: 0;
+        padding-left: 0px;
+    }
+
+    nav ul {
+        max-height: 0px;
+        background: #3f3844;
+        float: none;
+    }
+
+    .showNavigationbar {
+        max-height: 100vh;
+        border-top: 1px solid #ACACAC;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
+        padding: 24px 0;
+        text-align: center;
+        display: block;
+    }
+
+    nav ul li:first-child:hover {
+        border-top: none;
+    }
+
+    .navHamburger {
+        display: block;
+    }
+
+    article {
+        border-radius: 0px;
+    }
+
+    .companyLogo img {
+        max-width: 300px;
+    }
+
+    .companyLogo {
+        height: 150px;
+    }
+
+    .navigationBar2 ul {
+        flex-direction: column;
+    }
+
+    #buttonUp {
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+@media(max-width: 760px) {
+    header {
+        height: 9vh;
+        margin-bottom: 70px;
+    }
+
+    .fontButton {
+        display: none;
+    }
+
+    .articleHeader {
+        font-size: 1.5em;
+    }
+
+    .articleParagraph {
+        font-size: 1em;
+        font-weight: bold;
+        line-height: 25px;
+        font-family: 'Roboto', sans-serif
+    }
+
+    .companyName {
+        font-size: 1.5em;
+    }
+
+    .errorParagraph img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .errorParagraph p {
+        font-size: 1em;
+        font-weight: bold;
+        line-height: 25px;
+        font-family: 'Roboto', sans-serif
+    }
+}
